@@ -1,5 +1,16 @@
 # @verdaccio/loaders
 
+## 6.0.0-6-next.6
+
+### Minor Changes
+
+- 154b2ecd: refactor: remove @verdaccio/commons-api in favor @verdaccio/core and remove duplications
+
+### Patch Changes
+
+- Updated dependencies [154b2ecd]
+  - @verdaccio/logger@6.0.0-6-next.6
+
 ## 6.0.0-6-next.5
 
 ### Patch Changes

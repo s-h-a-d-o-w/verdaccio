@@ -1,5 +1,11 @@
 # Change Log
 
+## 11.0.0-6-next.9
+
+### Minor Changes
+
+- 154b2ecd: refactor: remove @verdaccio/commons-api in favor @verdaccio/core and remove duplications
+
 ## 11.0.0-6-next.8
 
 ### Major Changes

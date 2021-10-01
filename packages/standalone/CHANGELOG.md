@@ -1,5 +1,11 @@
 # @verdaccio/cli-standalone
 
+## 6.0.0-6-next.6
+
+### Minor Changes
+
+- 154b2ecd: refactor: remove @verdaccio/commons-api in favor @verdaccio/core and remove duplications
+
 ## 5.0.0-alpha.5
 
 ### Major Changes

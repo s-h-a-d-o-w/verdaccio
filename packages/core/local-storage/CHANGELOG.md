@@ -1,5 +1,18 @@
 # Change Log
 
+## 11.0.0-6-next.9
+
+### Minor Changes
+
+- 154b2ecd: refactor: remove @verdaccio/commons-api in favor @verdaccio/core and remove duplications
+
+### Patch Changes
+
+- Updated dependencies [154b2ecd]
+  - @verdaccio/core@6.0.0-6-next.2
+  - @verdaccio/file-locking@11.0.0-alpha.3
+  - @verdaccio/streams@11.0.0-6-next.4
+
 ## 11.0.0-6-next.8
 
 ### Major Changes

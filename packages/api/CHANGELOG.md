@@ -1,5 +1,24 @@
 # @verdaccio/api
 
+## 6.0.0-6-next.16
+
+### Minor Changes
+
+- 154b2ecd: refactor: remove @verdaccio/commons-api in favor @verdaccio/core and remove duplications
+
+### Patch Changes
+
+- Updated dependencies [154b2ecd]
+  - @verdaccio/auth@6.0.0-6-next.13
+  - @verdaccio/config@6.0.0-6-next.9
+  - @verdaccio/core@6.0.0-6-next.2
+  - @verdaccio/tarball@11.0.0-6-next.8
+  - @verdaccio/hooks@6.0.0-6-next.8
+  - @verdaccio/logger@6.0.0-6-next.6
+  - @verdaccio/middleware@6.0.0-6-next.13
+  - @verdaccio/store@6.0.0-6-next.14
+  - @verdaccio/utils@6.0.0-6-next.7
+
 ## 6.0.0-6-next.15
 
 ### Patch Changes
