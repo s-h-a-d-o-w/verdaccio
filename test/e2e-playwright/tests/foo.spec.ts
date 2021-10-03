@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
 
+// real    0m1,687s
+
 test('basic test', async ({ page }) => {
   await page.goto('http://localhost:4873');
   await expect(page).toHaveTitle(/Verdaccio/);
