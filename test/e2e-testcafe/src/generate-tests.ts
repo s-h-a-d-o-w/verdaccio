@@ -5,13 +5,20 @@ import { ncp as originalNcp } from 'ncp';
 
 const ncp = promisify(originalNcp);
 
+async function cleanGeneratedFolders(folderPath: string) {
+  await rm(folderPath, {
+    recursive: true,
+    force: true,
+  });
+  await mkdir(folderPath);
+}
+
 (async () => {
   try {
-    await rm(path.join(__dirname, '../storage'), {
-      recursive: true,
-      force: true,
-    });
-    await mkdir(path.join(__dirname, '../storage'));
+    await cleanGeneratedFolders(path.join(__dirname, '../storage'));
+    await cleanGeneratedFolders(path.join(__dirname, '../tests/generated'));
+
+    const testContent = await readFile(path.join(__dirname, `../tests/foo.spec.ts`), 'utf-8');
 
     const db: { list: string[]; secret: string } = {
       list: [],
@@ -19,7 +26,7 @@ const ncp = promisify(originalNcp);
     };
     const copyPromises = [];
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 1000; i++) {
       copyPromises.push(
         ncp(
           path.join(__dirname, '../mock-data/dummy'),
@@ -43,6 +50,8 @@ const ncp = promisify(originalNcp);
         path.join(__dirname, `../storage/dummy${index}/package.json`),
         packageJson.replace(/dummy/g, 'dummy' + index)
       );
+
+      await writeFile(path.join(__dirname, `../tests/generated/foo${index}.spec.ts`), testContent);
 
       db.list.push('dummy' + index);
     });

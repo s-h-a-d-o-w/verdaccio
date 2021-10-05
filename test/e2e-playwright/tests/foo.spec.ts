@@ -1,6 +1,10 @@
 import { test, expect } from '@playwright/test';
 
+// 1 test
 // real    0m1,687s
+
+// 1000 tests
+// real    2m11,678s
 
 test('basic test', async ({ page }) => {
   await page.goto('http://localhost:4873');

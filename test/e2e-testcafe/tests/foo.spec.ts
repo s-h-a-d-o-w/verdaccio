@@ -1,7 +1,22 @@
 import { Selector } from 'testcafe';
 import { ClientFunction } from 'testcafe';
 
+// 1 test
 // real    0m8,001s
+
+// 100 tests, 16 threads
+// real    0m25,231s
+
+// 1000 tests, 16 threads
+// real    3m5,543s
+// 8 threads
+// real    3m13,890s
+// 4 threads
+// real    4m57,376s
+
+// when using 8 or more browser instances:
+// (node:54505) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [BrowserSet]. Use emitter.setMaxListeners() to increase limit
+// (Use `node --trace-warnings ...` to show where the warning was created)
 
 const getWindowTitle = ClientFunction(() => window.document.title);
 
