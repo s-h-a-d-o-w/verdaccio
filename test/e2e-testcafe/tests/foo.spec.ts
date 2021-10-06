@@ -14,7 +14,8 @@ import { ClientFunction } from 'testcafe';
 // 4 threads
 // real    4m57,376s
 
-// when using 8 or more browser instances:
+// # Doesn't run tests in parallel out of the box
+// # when using 8 or more browser instances:
 // (node:54505) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [BrowserSet]. Use emitter.setMaxListeners() to increase limit
 // (Use `node --trace-warnings ...` to show where the warning was created)
 

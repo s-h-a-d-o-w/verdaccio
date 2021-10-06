@@ -1,0 +1,43 @@
+{
+  "name": "dummy",
+  "versions": {
+    "1.0.0": {
+      "name": "dummy",
+      "version": "1.0.0",
+      "main": "index.js",
+      "license": "MIT",
+      "publishConfig": {
+        "registry": "http://localhost:8000"
+      },
+      "_id": "dummy@1.0.0",
+      "_nodeVersion": "14.18.0",
+      "_npmVersion": "6.14.15",
+      "dist": {
+        "integrity": "sha512-5CyoxCWM2lhKvQY0u/bnsS5hkvHTzxnY01dfKW0iyORSTyXX0it8zuUlZ//R8LiNCJMovNAIlxXkUqIHD5mT+w==",
+        "shasum": "92e2b7eebae9290492c7885d9ac28b4ae6fd18e5",
+        "tarball": "http://localhost:8000/dummy/-/dummy-1.0.0.tgz"
+      },
+      "contributors": []
+    }
+  },
+  "time": {
+    "modified": "2021-10-01T18:36:48.285Z",
+    "created": "2012-02-19T21:35:53.514Z",
+    "1.0.0": "2021-10-01T18:29:32.261Z"
+  },
+  "users": {},
+  "dist-tags": {
+    "latest": "1.0.0"
+  },
+  "_uplinks": {},
+  "_distfiles": {},
+  "_attachments": {
+    "dummy-1.0.0.tgz": {
+      "shasum": "92e2b7eebae9290492c7885d9ac28b4ae6fd18e5",
+      "version": "1.0.0"
+    }
+  },
+  "_rev": "11-db94dc468aaf4396",
+  "_id": "dummy",
+  "readme": "ERROR: No README data found!"
+}
