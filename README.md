@@ -1,3 +1,45 @@
+# e2e (+ testing library) experiment
+
+## testing library
+
+```
+// 1 test
+// real    0m4,159s
+
+// 1000 tests
+// real    0m59,371s
+```
+
+## playwright
+
+```
+// 1 test
+// real    0m1,687s
+
+// 1000 tests
+// real    2m11,678s
+```
+
+## testcafe
+
+```
+// 1 test
+// real    0m8,001s
+
+// 1000 tests, 16 threads
+// real    3m5,543s
+```
+
+## [cypress](https://github.com/cypress-io/cypress/discussions/18380)
+
+```
+// 1 test
+// real    0m5,349s
+
+// 100 (!!!) tests
+// real    4m22,863s
+```
+
 ![verdaccio logo](https://cdn.verdaccio.dev/readme/verdaccio@2x.png)
 
 ![verdaccio gif](https://cdn.verdaccio.dev/readme/readme-website.png)
