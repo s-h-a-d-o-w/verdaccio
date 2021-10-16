@@ -5,7 +5,7 @@
   "main": "./src/generate-tests.ts",
   "scripts": {
     "start": "ts-node .",
-    "test": "playwright test",
+    "test": "./run-tests.sh",
     "test:watch": "playwright-watch test"
   },
   "author": "",
