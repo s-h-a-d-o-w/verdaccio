@@ -29,7 +29,7 @@ async function cleanGeneratedFolders(folderPath: string) {
     };
     const copyPromises = [];
 
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 100; i++) {
       copyPromises.push(
         ncp(
           path.join(__dirname, '../mock-data/dummy'),

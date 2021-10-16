@@ -5,13 +5,14 @@
 // real    4m22,863s
 
 // # Very macOS centric - no scroll bar in the side panel in their docs
-// # Annoyingly opinionated about its default configuration (video on by default)
+// # Odd default configuration (records video)
 // # No straightforward documentation for their configuration options
 // # Not able to run tests with multiple browser engines at once
 // # Watch mode doesn't work: cypress run --config watchForFileChanges=true
 // # Weird syntax:
 // .should('not.exist')
-// .find('input[type=checkbox]').check() < API should mimic user behavior and the user either clicks for use as a keyboard
+// # API should mimic user behavior and the user either clicks or uses a keyboard:
+// .find('input[type=checkbox]').check()
 
 describe('My First Test', () => {
   it('Does not do much!', () => {
