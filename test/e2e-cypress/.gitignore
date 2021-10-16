@@ -1,2 +1,2 @@
 /storage
-/tests/generated
+/cypress/integration/generated
