@@ -1,5 +1,7 @@
 # e2e (+ testing library) experiment
 
+All run on a 16 core machine.
+
 ## testing library
 
 ```
@@ -16,8 +18,10 @@
 // 1 test
 // real    0m1,687s
 
-// 1000 tests
-// real    2m11,678s
+// 1000 tests, 16 threads
+// real    2m19,297s
+// 32 threads
+// real    1m55,101s
 ```
 
 ## testcafe
@@ -27,7 +31,7 @@
 // real    0m8,001s
 
 // 1000 tests, 16 threads
-// real    3m5,543s
+// real    4m36,743s
 ```
 
 ## [cypress](https://github.com/cypress-io/cypress/discussions/18380)

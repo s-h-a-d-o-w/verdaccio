@@ -5,7 +5,7 @@
   "main": "./src/generate-tests.ts",
   "scripts": {
     "start": "ts-node .",
-    "test": "testcafe -c 8 chrome:headless ./tests/generated/*.spec.ts",
+    "test": "testcafe -c 16 chrome:headless ./tests/generated/*.spec.ts",
     "test:watch": "testcafe chrome:headless **/*.spec.ts --live"
   },
   "author": "",

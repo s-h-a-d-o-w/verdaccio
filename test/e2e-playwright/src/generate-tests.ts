@@ -1,5 +1,6 @@
 import { promisify } from 'util';
 import * as path from 'path';
+// @ts-ignore Not gonna bother with conflicting types for node for this experiment :)
 import { rename, readFile, writeFile, rm, mkdir } from 'fs/promises';
 import { ncp as originalNcp } from 'ncp';
 
