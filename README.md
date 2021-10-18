@@ -8,7 +8,7 @@ All run on a 16 core machine.
 // 1 test
 // real    0m4,159s
 
-// 1000 tests
+// 100x10 tests
 // real    0m59,371s
 ```
 
@@ -18,10 +18,17 @@ All run on a 16 core machine.
 // 1 test
 // real    0m1,687s
 
-// 1000 tests, 16 threads
+// 1000x1 tests
+// 16 threads
 // real    2m19,297s
 // 32 threads
 // real    1m55,101s
+
+// 100x10 tests
+// 16 threads
+// real    3m19,304s
+// 32 threads
+// real    2m52,542s
 ```
 
 ## testcafe
@@ -30,7 +37,12 @@ All run on a 16 core machine.
 // 1 test
 // real    0m8,001s
 
-// 1000 tests, 16 threads
+// 1000x1 tests
+// 16 threads
+// real    4m42,192s
+
+// 100x10 tests
+// 16 threads
 // real    4m36,743s
 ```
 
@@ -40,7 +52,13 @@ All run on a 16 core machine.
 // 1 test
 // real    0m5,349s
 
-// 100 (!!!) tests
+// 100x10 tests
+// real    13m26,116s
+
+// 10x10 (!!!) tests
+// real    1m24,476s
+
+// 100x1 (!!!) tests
 // real    4m22,863s
 ```
 
