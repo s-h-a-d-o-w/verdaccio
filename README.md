@@ -5,9 +5,9 @@ How to run:
 - [Build verdaccio](https://github.com/verdaccio/verdaccio/blob/master/CONTRIBUTING.md#building-the-project)
 - Run verdaccio using one of the `run-verdaccio.sh` scripts in each of the e2e folders
 - `yarn start` in one of the e2e folders to generate the tests
-- `./run-tests.sh`
+- `time pnpm test`
 
-**Results below are from a 16 core machine.**
+**Results below are from a i7-10875H machine with 64 GB RAM.**
 
 ## testing library
 
