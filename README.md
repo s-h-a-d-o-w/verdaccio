@@ -1,11 +1,11 @@
 # e2e (+ testing library) experiment
 
-How to run:
+How to run the e2e tests:
 
 - [Build verdaccio](https://github.com/verdaccio/verdaccio/blob/master/CONTRIBUTING.md#building-the-project)
-- Run verdaccio using one of the `run-verdaccio.sh` scripts in each of the e2e folders
-- `yarn start` in one of the e2e folders to generate the tests
-- `time pnpm test`
+- `yarn start` in one of the cypress, playwright or testcafe e2e folders to generate both tests and mock data
+- Run verdaccio using `run-verdaccio.sh` in the same folder
+- `time pnpm test` (playwright will probably tell you to run `npx playwright install` the first time you try to do this)
 
 **Results below are from a i7-10875H machine with 64 GB RAM.**
 
