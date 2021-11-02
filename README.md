@@ -3,7 +3,7 @@
 How to run the e2e tests:
 
 - [Build verdaccio](https://github.com/verdaccio/verdaccio/blob/master/CONTRIBUTING.md#building-the-project)
-- `yarn start` in one of the cypress, playwright or testcafe e2e folders to generate both tests and mock data
+- `pnpm start` in one of the cypress, playwright or testcafe e2e folders to generate both tests and mock data
 - Run verdaccio using `run-verdaccio.sh` in the same folder
 - `time pnpm test` (playwright will probably tell you to run `npx playwright install` the first time you try to do this)
 
@@ -21,6 +21,8 @@ How to run the e2e tests:
 
 ## playwright
 
+Performance can vary, hence sometimes multiple numbers.
+
 ```
 // 1 test
 // real    0m1,687s
@@ -33,9 +35,13 @@ How to run the e2e tests:
 
 // 100x10 tests
 // 16 threads
+// real    2m8,997s
 // real    3m19,304s
 // 32 threads
+// real    2m8,565s
 // real    2m52,542s
+// 32 threads, describe.parallel
+// real    1m49,468s
 ```
 
 ## testcafe
